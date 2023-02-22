@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+<form  method="post" class="contenedor-formulario">
+	<h1 class="titulo">Create account</h1>
+	<div class="contenedor-inputs">
+		<input type="text" id="name_input" name="nombre" placeholder="Nombre" class="validate_this" data-valid="0" data-error="name-error">
+		<div id="name-error" class="container-error">
+			<img src="image/error.svg" class="img-error">
+			<p class="text-error">Rellene este campo</p>
+		</div>
+		<input type="email" id="email_input" name="correo" placeholder="Correo" class="validate_this" data-valid="0" data-error="mail-error">
+		<div id="mail-error" class="container-error">
+			<img src="image/error.svg" class="img-error">
+			<p class="text-error">Rellene este campo</p>
+		</div>
+		<input type="password" id="password_input" name="clave" placeholder="Contraseña" class="validate_this" min="8" data-valid="0" data-error="password-error">
+		<div id="password-error" class="container-error">
+			<img src="image/error.svg" class="img-error">
+			<p class="text-error">Rellene este campo</p>
+		</div>
+        <input type="password" id="password_2_input" name="clave" placeholder="Repetir contraseña" class="validate_this" data-valid="0" data-error="password2-error">
+		<div id="password2-error" class="container-error">
+			<img src="image/error.svg" class="img-error">
+			<p class="text-error">Rellene este campo</p>
+		</div>
+        <button type="button" value="Registrar" class="btn-enviar" id="form_submit_btn">Enviar</button>
+	</div>
+</form>
+	
+</body>
+</html>
